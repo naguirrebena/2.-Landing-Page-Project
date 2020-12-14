@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4 Elements - Landing Page</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list">
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>4 Elements</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Earth" class="your-active-class">
+      <div class="landing__container">
+        <h2>Earth</h2>
+        <p>The earth is full of a wide variety of rocks and minerals which provides the soil to grow vegetation and support life. The two most common elements in the earth’s crust are oxygen (46%) and silicon (28%). Because of this, the most abundant mineral in the earth’s crust is silica (silicon dioxide). More commonly known as sand, silica is a major component of glass. How can glass be made out of sand? Interestingly, when silica is heated, it melts and becomes glass, hardening as it cools.</p>
+        <p>Rich deposits of metal ores are found throughout the earth’s crust. While these metals are used in the production of machinery, tools, buildings, and weapons, straight out of the earth these metals are pretty useless. Fire is used to heat, refine, and shape metal so that machines, hammers, and support beams can be made from it.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Water">
+      <div class="landing__container">
+        <h2>Water</h2>
+        <p>Water has many unique properties. The chemical formula of water is H20, meaning it is made of two hydrogen atoms bonded to one oxygen atom. The hydrogen atoms each attach to one side of the oxygen atom and have a positive charge whereas the oxygen atom has a negative charge. This polarizes the water molecule, much like a magnet, giving a water molecule positive and negative ends.</p>
+        <p>Since opposite charges attract, water molecules tend to “stick” together. This gives water surface tension and allows objects, such as paperclips, to float on it.</p>
+        <p>While it can’t dissolve everything, water is known as the universal solvent because it can dissolve more substances than any other liquid. It can dissolve salt, sugar, acids, alkalis, some gases, and organic material.</p>
+
+        </p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Air">
+      <div class="landing__container">
+        <h2>Air</h2>
+        <p>Air was considered a “pure” element, but in fact the air that’s all around us is made up of a variety of gases: primarily nitrogen and oxygen, with almost 1% argon and even smaller amounts of carbon dioxide and other elements such as krypton and helium. The composition of air is just right for life on Earth, though.</p>
+        <p>We use a lot of the oxygen we get from the air, then breathe out carbon dioxide – which plants need to manufacture their food through photosynthesis. Plants in turn give off oxygen during photosynthesis.</p>
+        <p>Although air is invisible (and most of the time we forget it is even there), it does take up space, it has volume, and it exerts pressure. This can be seen when you take an “empty” glass, turn it upside down, and try to push it down to the bottom of a sink full of water.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Fire">
+      <div class="landing__container">
+        <h2>Fire</h2>
+        <p>How does fire work? It’s closely linked to air. Fire needs three things in order to exist: oxygen, fuel, and heat.</p>
+        <p>The intensity of a fire varies because it is dependent on the oxygen, fuel, and heat available to it. When all three of these things are in a controlled situation, such as in candles or a campfire, fires are considered helpful. But when one or more of these things are not controlled, such as in a wildfire or a burning building, fires can easily become very dangerous.</p>
+        <p>To extinguish a fire, the oxygen, fuel, or heat needs to be removed. “Smothering” a fire by placing a blanket or dirt on it works because the fire goes out without oxygen. The earth provides an abundance of fuel in the form of wood and fossil fuels such as coal. When the fuel is removed, the fire has nothing left to burn and is extinguished. Water often serves as an effective cooling source by removing the heat from a fire. This is seen when hot lava from an erupting volcano enters the ocean or when a bucket of water is dumped on a campfire.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p><a href="learning-center.homesciencetools.com" target="_blank">Source: Home Science Tools</a> </p>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+</html>
